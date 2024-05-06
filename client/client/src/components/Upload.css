@@ -1,0 +1,139 @@
+/* Company header and logo styles */
+.company-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .company-logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+  .company-name {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .upload-header {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+.upload-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    max-width: 480px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.upload-header {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Input and button styles for better alignment and interaction */
+.file-input-container {
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px dashed #007BFF;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type="file"]::file-selector-button {
+    visibility: hidden;
+}
+
+input[type="file"]::before {
+    content: 'Choose file...';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Styling for the file list with improved visual hierarchy */
+.file-list {
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.file-list li {
+    border: 1px solid #ddd;
+    margin-top: 8px;
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.file-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.file-list a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.file-list a:hover {
+    text-decoration: underline;
+}
+
+.folder-name {
+    font-weight: bold;
+    color: #555;
+}
