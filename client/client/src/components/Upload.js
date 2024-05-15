@@ -22,7 +22,7 @@ function Upload() {
     formData.append("zipFile", file);
 
     axios
-      .post("https://panoapi.jcloudwork.com/upload", formData)
+      .post("https://panapi.jcloudwork.com/upload", formData)
       .then((response) => {
         setIndexPath(response.data.indexPath);
       })
@@ -46,7 +46,7 @@ function Upload() {
       {indexPath && (
         <button
           onClick={() =>
-            window.open(`https://panoapi.jcloudwork.com${indexPath}`, "_blank")
+            window.open(`https://panapi.jcloudwork.com${indexPath}`, "_blank")
           }
         >
           Click to view

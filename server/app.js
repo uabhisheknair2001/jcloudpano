@@ -58,7 +58,7 @@ app.post("/upload", (req, res) => {
     }
 
     const zip = new AdmZip(uploadPath);
-    const extractPath = path.join(baseDir, `extract-${timestamp}`);
+    const extractPath = path.join(baseDir, `jcloud-${timestamp}`);
     zip.extractAllTo(extractPath, true);
 
     const indexPath = findIndexHtml(extractPath);
